@@ -29,5 +29,11 @@
     <ClCompile Include="interfejs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Konstruktory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="funkcjeInterfejsu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

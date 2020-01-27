@@ -32,7 +32,7 @@ public:
 	string wiadomosc;
 
 	void sprawdz_odpowiedz();
-	void wyslij();
+	void wyslij() { cout << "Wiadomosc wyslana" << endl; };
 	void anuluj();
 };
 

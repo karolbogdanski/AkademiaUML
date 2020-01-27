@@ -61,5 +61,18 @@ platnosc::platnosc()
 {
 	id_platnosci = 1;
 	sposob_platnosci = "karta";
-	kwota = 23, 71;
+	kwota = 23,71;
+}
+
+magazyn::magazyn()
+{
+	nazwaProduktu[0] = "piwooo";
+	nazwaProduktu[1] = "jajkooo";
+	nazwaProduktu[2] = "placek";
+	nazwaProduktu[3] = "ciasteczko";
+
+	stanMagazynu[0] = 20;
+	stanMagazynu[1] = 10;
+	stanMagazynu[2] = 5;
+	stanMagazynu[3] = 0;
 }

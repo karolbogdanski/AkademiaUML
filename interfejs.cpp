@@ -1,36 +1,36 @@
 #include <iostream>
 #include <string>
+#include"oplatyKlasy.h"
+#include"rezerwacjeKlasy.h"
 
 using namespace std;
 
-
+void Rezerwacje();
+void Powitanie();
+void Menu();
+pralka* wczytajPralki();
+void wyswietlPralki(pralka *p);
 int main()
 {
 	bool active = true;
+	pralka *pralki = wczytajPralki();
 
-	cout << "WITAJ W PANELU AKADEMIKA!" << endl;
-	cout << "Wybierz interesuj¹c¹ ciê funkcjê z poni¿szych: " << endl << endl;
+	//wyswietlPralki(pralki);
 
-	cout << "1) Rezerwacje " << endl;
-	cout << "2) Op³aty" << endl;
-	cout << "3) Goœcie" << endl;
-	cout << "4) Room Service" << endl;
-	cout << "5) Wykwaterowanie" << endl;
-	cout << "6) Zg³oœ skargê" << endl;
-	cout << "7) Kontakt z Rad¹ Mieszkañców" << endl;
-	cout << "8) Aktualnoœci" << endl;
-	cout << "9) Wyjœcie" << endl;
+	Powitanie();
+	Menu();
 
 	int wybor;
 
 	while (active)
 	{
+		cout << "Menu Glowne: Wpisz liczbê od 1 do 9 i zatwierdŸ enterem." << endl;
 		cin >> wybor;
 
 		switch (wybor)
 		{
 		case 1:
-
+			Rezerwacje();
 			break;
 
 		case 2:
@@ -71,3 +71,4 @@ int main()
 	system("pause");
 	return 0;
 }
+

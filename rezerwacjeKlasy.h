@@ -14,7 +14,13 @@ protected:
 	bool dostepnosc;
 
 public:
-	bool czy_Dostepny();
+	bool czy_Dostepny() 
+	{
+		if (dostepnosc)
+			return true;
+		else
+			return false;
+	}
 
 };
 
@@ -45,4 +51,5 @@ class pralka :obiekt
 {
 	short nr_pralki;
 	short pietro;
+	friend pralka* wczytajPralki();
 };
