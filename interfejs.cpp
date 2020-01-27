@@ -11,13 +11,9 @@ void Rezerwacje();
 void Powitanie();
 void Menu();
 pralka* wczytajPralki();
-void wyswietlPralki(pralka *p);
 int main()
 {
 	bool active = true;
-	pralka *pralki = wczytajPralki();
-
-	//wyswietlPralki(pralki);
 
 	Powitanie();
 	Menu();

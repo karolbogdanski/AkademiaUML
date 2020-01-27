@@ -25,39 +25,8 @@ void Menu()
 	cout << "9) Wyjœcie" << endl;
 }
 
-void Rezerwacje()
+pralka* wczytajPralki()
 {
-	cout << "Co chcesz zarezerwowaæ?" << endl << endl;
-	cout << "1) pralka" << endl;
-	cout << "2) suszarka" << endl;
-	cout << "3) boisko" << endl;
-	cout << "4) swietlica" << endl;
-
-	int wybor;
-	cin >> wybor;
-	switch (wybor)
-	{
-	case 1:
-		cout << "Wybierz pralkê: " << endl;
-
-		break;
-	case 2:
-		cout << "Wybierz suszarke: " << endl;
-		break;
-	case 3:
-		cout << "Wybierz boisko: " << endl;
-		break;
-	case 4:
-		cout << "Rezerwujesz swietlice." << endl;
-		break;
-
-	}
-
-
-}
-
-pralka*  wczytajPralki()
-{	
 	pralka* p = new pralka;
 
 	pralka* listaPralek[24]; //powiedzmy ¿e na 6 piêtrach po 4 pralki
@@ -70,7 +39,7 @@ pralka*  wczytajPralki()
 			p->nr_pralki = j + 1;
 			p->pietro = i + 1;
 
-			if ((i+j)%3 == 0)
+			if ((i + j) % 3 == 0)
 			{
 				p->dostepnosc = false;
 			}
@@ -95,3 +64,37 @@ pralka*  wczytajPralki()
 
 	return *listaPralek;
 }
+
+void Rezerwacje()
+{
+	cout << "Co chcesz zarezerwowaæ?" << endl << endl;
+	cout << "1) pralka" << endl;
+	cout << "2) suszarka" << endl;
+	cout << "3) boisko" << endl;
+	cout << "4) swietlica" << endl;
+
+	int wybor;
+	cin >> wybor;
+	switch (wybor)
+	{
+	case 1:
+		cout << "Wybierz pralkê: " << endl;
+		wczytajPralki();
+
+		break;
+	case 2:
+		cout << "Wybierz suszarke: " << endl;
+		break;
+	case 3:
+		cout << "Wybierz boisko: " << endl;
+		break;
+	case 4:
+		cout << "Rezerwujesz swietlice." << endl;
+		break;
+
+	}
+
+
+}
+
+
