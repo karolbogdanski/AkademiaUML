@@ -2,6 +2,8 @@
 #include <string>
 #include"oplatyKlasy.h"
 #include"rezerwacjeKlasy.h"
+#include "uzytkownik.h"
+
 
 using namespace std;
 

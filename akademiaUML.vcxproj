@@ -138,9 +138,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="czynnosciAdministracyjne.h" />
     <ClInclude Include="oplatyKlasy.h" />
     <ClInclude Include="rezerwacjeKlasy.h" />
     <ClInclude Include="sprawyStudenckieKlasy.h" />
+    <ClInclude Include="uzytkownik.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="funkcjeInterfejsu.cpp" />

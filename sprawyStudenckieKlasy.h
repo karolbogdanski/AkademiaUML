@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "oplatyKlasy.h"
+#include "uzytkownik.h"
 using namespace std;
 
 class wyborca :student

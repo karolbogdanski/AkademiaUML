@@ -24,6 +24,12 @@
     <ClInclude Include="sprawyStudenckieKlasy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="czynnosciAdministracyjne.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uzytkownik.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="interfejs.cpp">
