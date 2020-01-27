@@ -22,7 +22,7 @@ int main()
 
 	while (active)
 	{
-		cout << "Menu Glowne: Wpisz liczbê od 1 do 9 i zatwierdŸ enterem." << endl;
+		cout << "Menu Glowne: Wpisz liczbe od 1 do 9 i zatwierdz enterem." << endl;
 		cin >> wybor;
 
 		switch (wybor)

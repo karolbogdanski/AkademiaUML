@@ -27,21 +27,27 @@ public:
 class boisko :obiekt
 {
 	short nr_boiska;
+	friend boisko* wczytajBoiska();
 };
 
 class suszarnia : obiekt
 {
+public:
 	short nr_suszarki;
 	short pietro;
+	friend suszarnia* wczytajSuszarnie();
 };
 
 class swietlica :obiekt
 {
-	short id_gry;
+public:
+	short id_gry[4] = {1, 2, 3, 4};
+	friend swietlica* wczytajSwietlice();
 };
 
 class rezerwacja :obiekt
 {
+public:
 	short id_rezerwacji;
 	int dlugosc;
 	string godzina_rezerwacji; //zmiana z double na string wzglêdem diagramu

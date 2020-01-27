@@ -41,5 +41,8 @@
     <ClCompile Include="funkcjeInterfejsu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="rezerwacjeFunkcje.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
