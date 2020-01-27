@@ -15,6 +15,7 @@ protected:
 	bool logged;
 
 public:
+	uzytkownik();
 	bool is_logged()
 	{
 		if (logged)
@@ -35,6 +36,7 @@ private:
 	long numer_konta;
 
 public:
+	student();
 	void zamawianie_room_service();
 	double sprawdzanie_salda();
 	bool czy_mozna_nocleg();
@@ -50,6 +52,7 @@ private:
 	string godziny_pracy;
 
 public:
+	administracja();
 	bool zatwierdz(); //powazna zmiana, wszystkie metody typu "potwierdz" zamienione w jedn� po cos w koncu s� te abstrakcje lol
 	double zmiana_salda_studenta();
 	int zmiana_ilosci_dokonanych_rezerwacji();
@@ -89,6 +92,7 @@ private:
 	bool rodzina;
 
 public:
+	nocleg();
 	bool czyDarmowy();
 
 };
@@ -106,6 +110,7 @@ private:
 	string rodzajProdktu;
 	bool zawAlkoholu;
 public:
+	room_service();
 	void zamow();
 };
 
@@ -113,6 +118,7 @@ class dodatkowa_doba :usluga
 {
 	int ilosc;
 public:
+	dodatkowa_doba();
 	bool isNegative();
 };
 
@@ -125,6 +131,7 @@ private:
 	string sposob_platnosci;
 	double kwota;
 public:
+	platnosc();
 	void zaplac_Karta();
 	void zaplac_przelewem();
 	void potwierdzenie();
@@ -135,9 +142,10 @@ public:
 class magazyn
 {
 private: 
-	string nazwaProduktu;
-	int stanMagazynu;
+	string nazwaProduktu[4]; // zmienione na tablice no bo szanujmy sb jaka znowu nazwa produktu xD
+	int stanMagazynu[4];	//jw
 
 public:
+	magazyn();
 	int zmienStan();
 };

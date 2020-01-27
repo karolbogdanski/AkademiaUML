@@ -18,5 +18,16 @@
     <ClInclude Include="oplatyKlasy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="rezerwacjeKlasy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sprawyStudenckieKlasy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="interfejs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
