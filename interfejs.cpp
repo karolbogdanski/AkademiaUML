@@ -11,6 +11,8 @@ void Rezerwacje();
 void Powitanie();
 void Menu();
 pralka* wczytajPralki();
+void Zglos();
+
 int main()
 {
 	bool active = true;
@@ -48,7 +50,7 @@ int main()
 			break;
 
 		case 6:
-
+			Zglos();
 			break;
 
 		case 7:

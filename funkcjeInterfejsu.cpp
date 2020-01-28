@@ -25,6 +25,36 @@ void Menu()
 	cout << "9) Wyjœcie" << endl;
 }
 
+void Zglos() {
+	cout << "Co chcesz zglosic?" << endl << endl;
+	cout << "1) skarga" << endl;
+	cout << "2) usterka" << endl;
 
+	int wybor;
+	cin >> wybor;
+	switch (wybor)
+	{
+	case 1: {
+
+		Usterka* wU = new Usterka;
+		cout << "Wypelnij formularz " << endl;
+		ofstream f1("usterki.txt", ios::app);
+
+		cout << "jaki typ usterki?: ";
+		cin >> wU->typ;
+		cout << "opisz usterke najlepiej jak potrafisz: ";
+		cin >> wU->opis_usterki;
+		f1 << wU->typ << endl << wU->opis_usterki;
+
+		break;
+	}
+	case 2:
+		cout << "Wypelnij formularz: " << endl;
+		
+		break;
+
+
+	}
+}
 
 
