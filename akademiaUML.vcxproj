@@ -150,6 +150,7 @@
     <ClCompile Include="interfejs.cpp" />
     <ClCompile Include="Konstruktory.cpp" />
     <ClCompile Include="rezerwacjeFunkcje.cpp" />
+    <ClCompile Include="sprawyStudenckieFunkcje.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
