@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
-
+#include <fstream>
 
 
 using namespace std;
@@ -26,8 +26,9 @@ public:
 };
 
 class Skarga :zgloszenie {
-protected:
-	string tresc;
+
+	
 public:
+	string tresc;
 	friend Skarga* wypelnijSkarga();
 };

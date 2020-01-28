@@ -4,10 +4,13 @@
 #include"rezerwacjeKlasy.h"
 #include "uzytkownik.h"
 #include "czynnosciAdministracyjne.h"
+#include "sprawyStudenckieKlasy.h"
 
 
 using namespace std;
 
+void Aktualnoscii();
+void Kontaktuj();
 void Zglos();
 void Rezerwacje();
 void Powitanie();
@@ -19,6 +22,7 @@ void zaplacAkademik();
 void wybory();
 void zamowRS();
 void wykwateruj();
+
 
 int main()
 {
@@ -40,6 +44,7 @@ int main()
 		{
 		case 1:
 			Rezerwacje();
+			Menu();
 			break;
 
 		case 2:
@@ -56,18 +61,48 @@ int main()
 
 		case 5:
 			wykwateruj();
+
+			system("cls");
+			Menu();
+			break;
+
+		case 3:
+
+			system("cls");
+			Menu();
+			break;
+
+		case 4:
+
+			system("cls");
+			Menu();
+			break;
+
+		case 5:
+
+			system("cls");
+			Menu();
 			break;
 
 		case 6:
 			Zglos();
+			system("cls");
+			Menu();
 			break;
 
 		case 7:
+			cout << endl;
+			Kontaktuj();
+			cout << endl;
 
+			Menu();
 			break;
 
 		case 8:
 
+			Aktualnoscii();
+			system("cls");
+			Menu();
 			break;
 
 		case 9:

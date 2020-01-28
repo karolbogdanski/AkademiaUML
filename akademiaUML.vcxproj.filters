@@ -7,6 +7,7 @@
     <ClCompile Include="Konstruktory.cpp" />
     <ClCompile Include="rezerwacjeFunkcje.cpp" />
     <ClCompile Include="funkcjeOplaty.cpp" />
+    <ClCompile Include="sprawyStudenckieFunkcje.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="czynnosciAdministracyjne.h" />
