@@ -23,10 +23,15 @@ void wpiszNocleg()
 	cin >> n->nazwiskoGoscia;
 
 	cout << "Czy gosc jest czlonkiem twojej rodziny badz mieszkancem miasteczka? (T/N)" << endl;
-	int odp;
+	string odp;
+	int war = 0;
 	cin >> odp;
+	if (odp == "t")
+		war = 1;
+	else if (odp == "n")
+		war = 0;
 
-	if (odp)
+	if (war)
 		n->MieszkaniecMS = true;
 	n->czyDarmowy();
 

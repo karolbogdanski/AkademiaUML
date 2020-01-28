@@ -55,6 +55,25 @@ boisko* wczytajBoiska()
 			cout << " jest niedostepne" << endl;
 	}
 
+	int wybor;
+	cin >> wybor;
+
+	switch (wybor)
+	{
+	case 1:
+		cout << "Wybrano boisko nr" << 1 << endl;
+		break;
+	case 2:
+		cout << "Wybrano boisko nr" << 2 << endl;
+		break;
+	case 3:
+		cout << "Wybrano boisko nr" << 3 << endl;
+		break;
+	case 4:
+		cout << "Wybrano boisko nr" << 4 << endl;
+		break;
+	}
+
 	return *listaBoisk;
 }
 

@@ -44,11 +44,14 @@ int main()
 		{
 		case 1:
 			Rezerwacje();
+			system("cls");
 			Menu();
 			break;
 
 		case 2:
 			zaplacAkademik();
+			system("cls");
+			Menu();
 			break;
 
 		case 3:
