@@ -1,9 +1,12 @@
 #include <iostream>
 #include <string>
+#include <fstream>
 #include "oplatyKlasy.h"
 #include "sprawyStudenckieKlasy.h"
 #include "rezerwacjeKlasy.h"
 #include "uzytkownik.h"
+#include "czynnosciAdministracyjne.h"
+
 
 
 void Powitanie()
@@ -19,7 +22,7 @@ void Menu()
 	cout << "3) Goœcie" << endl;
 	cout << "4) Room Service" << endl;
 	cout << "5) Wykwaterowanie" << endl;
-	cout << "6) Zg³oœ skargê" << endl;
+	cout << "6) Zg³oszenia" << endl;
 	cout << "7) Kontakt z Rad¹ Mieszkañców" << endl;
 	cout << "8) Aktualnoœci" << endl;
 	cout << "9) Wyjœcie" << endl;
@@ -65,6 +68,24 @@ pralka* wczytajPralki()
 	return *listaPralek;
 }
 
+/*Usterka* wypelnijUsterka()
+{
+	ofstream f1("usterki.txt", ios::app);
+	cout << "jaki typ usterki?: ";
+	cin >> zgloszenieUsterka.typ;
+	cout << "opisz usterke najlepiej jak potrafisz: ";
+	cin >> zgloszenieUsterka.opis_usterki;
+	f1 << zgloszenieUsterka.typ << endl << zgloszenieUsterka.opis_usterki;
+
+	return 0;
+}
+
+Skarga* wypelnijSkarga()
+{
+	return nullptr;
+}
+*/
+
 void Rezerwacje()
 {
 	cout << "Co chcesz zarezerwowaæ?" << endl << endl;
@@ -97,4 +118,34 @@ void Rezerwacje()
 
 }
 
+void Zglos() {
+	cout << "Co chcesz zg³osiæ?" << endl << endl;
+	cout << "1) skarga" << endl;
+	cout << "2) usterka" << endl;
+
+	int wybor;
+	cin >> wybor;
+	switch (wybor)
+	{
+	case 1: {
+
+
+		cout << "Wype³nij formularz " << endl;
+		ofstream f1("usterki.txt", ios::app);
+		cout << "jaki typ usterki?: ";
+		cin >> zgloszenieUsterka.typ;
+		cout << "opisz usterke najlepiej jak potrafisz: ";
+		cin >> zgloszenieUsterka.opis_usterki;
+		f1 << zgloszenieUsterka.typ << endl << zgloszenieUsterka.opis_usterki;
+
+		break;
+	}
+	case 2:
+		cout << "Wype³nij formularz: " << endl;
+		
+		break;
+
+
+	}
+}
 

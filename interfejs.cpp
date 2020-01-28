@@ -3,14 +3,18 @@
 #include"oplatyKlasy.h"
 #include"rezerwacjeKlasy.h"
 #include "uzytkownik.h"
+#include "czynnosciAdministracyjne.h"
 
 
 using namespace std;
 
+void Zglos();
 void Rezerwacje();
 void Powitanie();
 void Menu();
 pralka* wczytajPralki();
+Usterka* wypelnijUsterka();
+
 int main()
 {
 	bool active = true;
@@ -48,6 +52,8 @@ int main()
 			break;
 
 		case 6:
+
+			//Zglos();
 
 			break;
 
