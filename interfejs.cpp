@@ -14,10 +14,16 @@ void Powitanie();
 void Menu();
 pralka* wczytajPralki();
 Usterka* wypelnijUsterka();
+void wpiszNocleg();
+void zaplacAkademik();
+void wybory();
+void zamowRS();
+void wykwateruj();
 
 int main()
 {
 	setlocale(LC_ALL, "pl_PL");
+	
 	bool active = true;
 
 	Powitanie();
@@ -37,25 +43,23 @@ int main()
 			break;
 
 		case 2:
-
+			zaplacAkademik();
 			break;
 
 		case 3:
-
+			wpiszNocleg();
 			break;
 
 		case 4:
-
+			zamowRS();
 			break;
 
 		case 5:
-
+			wykwateruj();
 			break;
 
 		case 6:
-
 			Zglos();
-
 			break;
 
 		case 7:
@@ -67,6 +71,9 @@ int main()
 			break;
 
 		case 9:
+			wybory();
+			break;
+		case 10:
 			active = false;
 			break;
 

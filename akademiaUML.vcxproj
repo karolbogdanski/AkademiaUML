@@ -147,6 +147,7 @@
   <ItemGroup>
     <ClCompile Include="czynnosciAdministracyjnefunkcje.cpp" />
     <ClCompile Include="funkcjeInterfejsu.cpp" />
+    <ClCompile Include="funkcjeOplaty.cpp" />
     <ClCompile Include="interfejs.cpp" />
     <ClCompile Include="Konstruktory.cpp" />
     <ClCompile Include="rezerwacjeFunkcje.cpp" />

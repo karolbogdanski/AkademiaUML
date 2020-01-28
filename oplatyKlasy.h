@@ -19,9 +19,9 @@ protected:
 	unsigned limit;
 
 public:
-	string sprawdzNazwe();
-	string sprawdzCene();
-	string sprawdzRodzaj();
+	string sprawdzNazwe() { return nazwaUslugi; }
+	double sprawdzCene() { return cena; } //zmiana typu bo byl bez sensu
+	string sprawdzOpis() { return opis; } //zmiana nazwy
 	void dodajDoRachunku();
 	
 };
@@ -38,12 +38,21 @@ private:
 	bool rodzina;
 
 public:
+	friend void wpiszNocleg();
 	nocleg();
-	bool czyDarmowy();
+	bool czyDarmowy()
+	{
+		if (MieszkaniecMS || rodzina)
+		{
+			cena = 0;
+			return true;
+		}
+		else return false;
+	}
 
 };
 
-class oplata_akadeik:usluga
+class oplata_akademik:usluga
 {
 	string data_kolejnej_wplaty();
 
@@ -94,4 +103,5 @@ private:
 public:
 	magazyn();
 	int zmienStan();
+	friend void zamowRS();
 };

@@ -11,7 +11,7 @@ void Powitanie()
 
 void Menu()
 {
-	cout << "Wybierz interesuj�c� ci� funkcj� z poni�szych: " << endl << endl;
+	cout << "Wybierz interesujace cie funkcje z ponizszych: " << endl << endl;
 	cout << "1) Rezerwacje " << endl;
 	cout << "2) Oplaty" << endl;
 	cout << "3) Goscie" << endl;
@@ -20,7 +20,8 @@ void Menu()
 	cout << "6) Zgloszenia" << endl;
 	cout << "7) Kontakt z Rada Mieszkancow" << endl;
 	cout << "8) Aktualnosci" << endl;
-	cout << "9) Wyjscie" << endl;
+	cout << "9) Wybory" << endl;
+	cout << "10) Wyjscie" << endl;
 }
 
 

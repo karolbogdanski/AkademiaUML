@@ -40,7 +40,7 @@ private:
 public:
 	student();
 	void zamawianie_room_service();
-	double sprawdzanie_salda();
+	double sprawdzanie_salda() { return saldo; }
 	bool czy_mozna_nocleg();
 	void kupowanie_noclegu();
 	void zaplata_naleznosci();
