@@ -145,6 +145,7 @@
     <ClInclude Include="uzytkownik.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="czynnosciAdministracyjnefunkcje.cpp" />
     <ClCompile Include="funkcjeInterfejsu.cpp" />
     <ClCompile Include="interfejs.cpp" />
     <ClCompile Include="Konstruktory.cpp" />

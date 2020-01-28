@@ -1,9 +1,12 @@
 #include <iostream>
 #include <string>
+#include <fstream>
 #include "oplatyKlasy.h"
 #include "sprawyStudenckieKlasy.h"
 #include "rezerwacjeKlasy.h"
 #include "uzytkownik.h"
+#include "czynnosciAdministracyjne.h"
+
 
 
 void Powitanie()
@@ -13,18 +16,97 @@ void Powitanie()
 
 void Menu()
 {
-	cout << "Wybierz interesuj¹c¹ ciê funkcjê z poni¿szych: " << endl << endl;
+	cout << "Wybierz interesujï¿½cï¿½ ciï¿½ funkcjï¿½ z poniï¿½szych: " << endl << endl;
 	cout << "1) Rezerwacje " << endl;
-	cout << "2) Op³aty" << endl;
-	cout << "3) Goœcie" << endl;
+	cout << "2) Opï¿½aty" << endl;
+	cout << "3) Goï¿½cie" << endl;
 	cout << "4) Room Service" << endl;
 	cout << "5) Wykwaterowanie" << endl;
-	cout << "6) Zg³oœ skargê" << endl;
-	cout << "7) Kontakt z Rad¹ Mieszkañców" << endl;
-	cout << "8) Aktualnoœci" << endl;
-	cout << "9) Wyjœcie" << endl;
+	cout << "6) Zgï¿½oszenia" << endl;
+	cout << "7) Kontakt z Radï¿½ Mieszkaï¿½cï¿½w" << endl;
+	cout << "8) Aktualnoï¿½ci" << endl;
+	cout << "9) Wyjï¿½cie" << endl;
 }
 
 
+/*Usterka* wypelnijUsterka()
+{
+	ofstream f1("usterki.txt", ios::app);
+	cout << "jaki typ usterki?: ";
+	cin >> zgloszenieUsterka.typ;
+	cout << "opisz usterke najlepiej jak potrafisz: ";
+	cin >> zgloszenieUsterka.opis_usterki;
+	f1 << zgloszenieUsterka.typ << endl << zgloszenieUsterka.opis_usterki;
 
+	return 0;
+}
+
+Skarga* wypelnijSkarga()
+{
+	return nullptr;
+}
+*/
+
+void Rezerwacje()
+{
+	cout << "Co chcesz zarezerwowaï¿½?" << endl << endl;
+	cout << "1) pralka" << endl;
+	cout << "2) suszarka" << endl;
+	cout << "3) boisko" << endl;
+	cout << "4) swietlica" << endl;
+
+	int wybor;
+	cin >> wybor;
+	switch (wybor)
+	{
+	case 1:
+		cout << "Wybierz pralkï¿½: " << endl;
+		wczytajPralki();
+
+		break;
+	case 2:
+		cout << "Wybierz suszarke: " << endl;
+		break;
+	case 3:
+		cout << "Wybierz boisko: " << endl;
+		break;
+	case 4:
+		cout << "Rezerwujesz swietlice." << endl;
+		break;
+
+	}
+
+
+}
+
+void Zglos() {
+	cout << "Co chcesz zgï¿½osiï¿½?" << endl << endl;
+	cout << "1) skarga" << endl;
+	cout << "2) usterka" << endl;
+
+	int wybor;
+	cin >> wybor;
+	switch (wybor)
+	{
+	case 1: {
+
+
+		cout << "Wypeï¿½nij formularz " << endl;
+		ofstream f1("usterki.txt", ios::app);
+		cout << "jaki typ usterki?: ";
+		cin >> zgloszenieUsterka.typ;
+		cout << "opisz usterke najlepiej jak potrafisz: ";
+		cin >> zgloszenieUsterka.opis_usterki;
+		f1 << zgloszenieUsterka.typ << endl << zgloszenieUsterka.opis_usterki;
+
+		break;
+	}
+	case 2:
+		cout << "Wypeï¿½nij formularz: " << endl;
+		
+		break;
+
+
+	}
+}
 
