@@ -17,6 +17,7 @@ Usterka* wypelnijUsterka();
 
 int main()
 {
+	setlocale(LC_ALL, "pl_PL");
 	bool active = true;
 
 	Powitanie();
@@ -53,7 +54,7 @@ int main()
 
 		case 6:
 
-			//Zglos();
+			Zglos();
 
 			break;
 

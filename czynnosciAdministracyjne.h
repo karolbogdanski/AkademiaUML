@@ -1,8 +1,6 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include <conio.h>
-#include <windows.h>
 
 
 
@@ -20,14 +18,12 @@ public:
 
 
 class Usterka :zgloszenie {
-protected:
-	
-	
+
 public:
 	string typ;
 	string opis_usterki;
 	friend Usterka* wypelnijUsterka();
-}zgloszenieUsterka;
+};
 
 class Skarga :zgloszenie {
 protected:

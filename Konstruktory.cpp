@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include "oplatyKlasy.h"
-#include "sprawyStudenckieKlasy.h"
 #include "rezerwacjeKlasy.h"
 #include "uzytkownik.h"
 

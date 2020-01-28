@@ -1,9 +1,4 @@
-#include <iostream>
-#include <string>
-#include "oplatyKlasy.h"
-#include "sprawyStudenckieKlasy.h"
 #include "rezerwacjeKlasy.h"
-#include "uzytkownik.h"
 
 pralka* wczytajPralki()
 {
@@ -137,6 +132,7 @@ void Rezerwacje()
 	case 1:
 		cout << "Wybierz pralke: " << endl;
 		cout << "aktualnie dostepne tylko pralki z dnia dzisiejszego" << endl;
+		wczytajPralki();
 		short numer, pietro;
 		cout << "wpisz pietro(1-6): "; cin >> pietro;
 		cout << "wpisz numer pralki (1-4): "; cin >> numer;
