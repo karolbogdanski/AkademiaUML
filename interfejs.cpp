@@ -5,6 +5,8 @@
 #include "uzytkownik.h"
 #include "czynnosciAdministracyjne.h"
 #include "sprawyStudenckieKlasy.h"
+#include <conio.h>
+#pragma warning(disable:4996)
 
 
 using namespace std;
@@ -44,37 +46,48 @@ int main()
 		{
 		case 1:
 			Rezerwacje();
+			cout << endl << "Kliknij cokolwiek aby wyjsc." << endl;
+			getch();
 			system("cls");
 			Menu();
 			break;
 
 		case 2:
 			zaplacAkademik();
+			cout << endl << "Kliknij cokolwiek aby wyjsc." << endl;
+			getch();
 			system("cls");
 			Menu();
 			break;
 
 		case 3:
 			wpiszNocleg();
+			cout << endl << "Kliknij cokolwiek aby wyjsc." << endl;
+			getch();
 			system("cls");
 			Menu();
 			break;
 
 		case 4:
 			zamowRS();
+			cout << endl << "Kliknij cokolwiek aby wyjsc." << endl;
+			getch();
 			system("cls");
 			Menu();
 			break;
 
 		case 5:
 			wykwateruj();
-
+			cout << endl << "Kliknij cokolwiek aby wyjsc." << endl;
+			getch();
 			system("cls");
 			Menu();
 			break;
 
 		case 6:
 			Zglos();
+			cout << endl << "Kliknij cokolwiek aby wyjsc." << endl;
+			getch();
 			system("cls");
 			Menu();
 			break;
@@ -83,6 +96,9 @@ int main()
 			cout << endl;
 			Kontaktuj();
 			cout << endl;
+			cout << endl << "Kliknij cokolwiek aby wyjsc." << endl;
+			getch();
+			system("cls");
 			Menu();
 			break;
 
@@ -94,6 +110,10 @@ int main()
 
 		case 9:
 			wybory();
+			cout << endl << "Kliknij cokolwiek aby wyjsc." << endl;
+			getch();
+			system("cls");
+			Menu();
 			break;
 		case 10:
 			active = false;
