@@ -53,32 +53,18 @@ int main()
 
 		case 3:
 			wpiszNocleg();
+			system("cls");
+			Menu();
 			break;
 
 		case 4:
 			zamowRS();
+			system("cls");
+			Menu();
 			break;
 
 		case 5:
 			wykwateruj();
-
-			system("cls");
-			Menu();
-			break;
-
-		case 3:
-
-			system("cls");
-			Menu();
-			break;
-
-		case 4:
-
-			system("cls");
-			Menu();
-			break;
-
-		case 5:
 
 			system("cls");
 			Menu();
@@ -94,12 +80,10 @@ int main()
 			cout << endl;
 			Kontaktuj();
 			cout << endl;
-
 			Menu();
 			break;
 
 		case 8:
-
 			Aktualnoscii();
 			system("cls");
 			Menu();
